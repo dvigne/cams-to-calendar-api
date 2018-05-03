@@ -2,20 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate/Http/Request;
+use Illuminate\Http\Request;
 
-class ExampleController extends Controller
+class GoogleAPIController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
     public function index(Request $request)
     {
       $courseName = $request->input('courseName');
@@ -23,10 +13,10 @@ class ExampleController extends Controller
       $time = $request->input('time');
       $start = $request->input('start');
       $end = $request->input('end');
-      $roomNum = $request->input('roomNum');
+      $roomNumer = $request->input('roomNumer');
 
-      //TODO: Chris -- Write the Google API Code here
-
+      //TODO: Chris -- Add Google API Code Here
+      
       return response(200);
     }
 }
